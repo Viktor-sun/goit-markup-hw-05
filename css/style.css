@@ -31,6 +31,18 @@ ul {
 	margin: 0;
 }
 
+.title {
+	margin-top: 0;
+	margin-bottom: 50px;
+
+	color: var(--titles-text-color);
+
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.2;
+	text-align: center;
+}
+
 .container {
 	width: 1170px;
 	/* margin-left: auto;
@@ -185,19 +197,6 @@ ul {
 	letter-spacing: 0.06em;
 }
 
-/* Title */
-.title {
-	margin-top: 0;
-	margin-bottom: 50px;
-
-	color: var(--titles-text-color);
-
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.2;
-	text-align: center;
-}
-
 /* Achievements */
 .visually-hidden {
 	position: absolute !important;
@@ -250,9 +249,19 @@ ul {
 }
 
 /* Our works */
+.item.position {
+	position: relative;
+}
+
 .title-img {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
 	margin-top: 0;
 	margin-bottom: 0;
+	padding-top: 27px;
+	padding-bottom: 27px;
 
 	color: var(--background-color);
 	background: rgba(47, 48, 58, 0.8);
@@ -509,14 +518,29 @@ ul {
 	box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
-/* .text-hover {
+.project-container .position {
+	position: relative;
+}
+
+.text-hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 63px 24px;
+
 	color: var(--background-color);
-	background-color: var(--accent-color);
+	background: rgba(33, 150, 243, 0.9);
 
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 1.5;
-} */
+
+	opacity: 0;
+}
+
+.project-container > li:hover .text-hover {
+	opacity: 1;
+}
 
 .wrapper {
 	padding: 20px 24px;

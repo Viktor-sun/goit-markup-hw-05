@@ -114,6 +114,22 @@ ul {
 	color: var(--accent-color);
 }
 
+.list-nav > li {
+	position: relative;
+}
+
+.list-nav .current::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 4px;
+	border-radius: 2px;
+
+	background-color: var(--accent-color);
+}
+
 .address-nav {
 	margin-left: auto;
 }

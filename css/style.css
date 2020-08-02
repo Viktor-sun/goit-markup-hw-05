@@ -89,6 +89,8 @@ ul {
 }
 
 .list-nav .link {
+	position: relative;
+
 	display: block;
 	padding-top: 32px;
 	padding-bottom: 32px;
@@ -99,6 +101,11 @@ ul {
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-delay: 0;
 }
 
 .list-nav .link:hover,
@@ -112,10 +119,6 @@ ul {
 
 .list-nav .current {
 	color: var(--accent-color);
-}
-
-.list-nav > li {
-	position: relative;
 }
 
 .list-nav .current::after {
@@ -147,6 +150,11 @@ ul {
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-delay: 0;
 }
 
 .address-nav > .link:hover,
@@ -341,19 +349,25 @@ ul {
 	align-items: center;
 	width: 44px;
 	height: 44px;
+	border-radius: 50%;
+
+	color: #afb1b8;
+
+	transition-property: background-color, color;
+	transition-duration: 250ms, 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+	transition-delay: 0, 0;
 }
 
 .socials-link:hover {
-	border-radius: 50%;
-
 	background-color: var(--accent-color);
-	color: var(--background-color);
-	--color4: #ffffff;
+	color: #ffffff;
 }
 
 .socials-icon {
 	width: 20px;
 	height: 20px;
+	--color4: currentColor;
 }
 
 /* Permanent clients */
@@ -372,6 +386,11 @@ ul {
 
 	color: #afb1b8;
 	--color4: currentColor;
+
+	transition-property: border-color, color;
+	transition-duration: 250ms, 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+	transition-delay: 0, 0;
 }
 
 .client:hover,
@@ -451,6 +470,11 @@ ul {
 	border-radius: 50%;
 
 	background-color: rgba(255, 255, 255, 0.1);
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-delay: 0;
 }
 
 .socials-footer a:hover {

@@ -159,8 +159,8 @@ ul {
 .address-nav > .link {
 	display: inline-flex;
 	align-items: center;
-	padding-top: 32px;
-	padding-bottom: 32px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 
 	color: var(--primery-text-color);
 

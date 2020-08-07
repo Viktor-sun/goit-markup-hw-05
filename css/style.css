@@ -227,6 +227,7 @@ img {
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.4;
+	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 }
@@ -615,6 +616,8 @@ img {
 	height: 30px;
 
 	background: var(--background-color);
+
+	border-radius: 50%;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
